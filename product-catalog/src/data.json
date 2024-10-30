@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "name": "Motorcycle Helmet",
+      "price": 99.99,
+      "image": "/images/motorcycle_helmet.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Leather Riding Jacket",
+      "price": 149.99,
+      "image": "/images/leather_jacket.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Motorcycle Gloves",
+      "price": 49.99,
+      "image": "/images/motorcycle_gloves.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Motorcycle Boots",
+      "price": 129.99,
+      "image": "/images/motorcycle_boots.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Motorcycle Cover",
+      "price": 34.99,
+      "image": "/images/motorcycle_cover.jpg"
+    },
+    {
+      "id": 6,
+      "name": "LED Headlight",
+      "price": 69.99,
+      "image": "/images/led_headlight.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Motorcycle Lock",
+      "price": 19.99,
+      "image": "/images/motorcycle_lock.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Handlebar Grips",
+      "price": 24.99,
+      "image": "/images/handlebar_grips.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Tank Bag",
+      "price": 79.99,
+      "image": "/images/tank_bag.jpg"
+    }
+    
+  ]
+  
