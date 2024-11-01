@@ -71,6 +71,7 @@ const App = () => {
                   <img src={item.image} className="product-image" alt={item.name} />
                   <div className="card-body">
                     <h5 className="card-title">{item.name}</h5>
+                    <p className="card-text">{item.description}</p>
                     <p className="card-text">${item.price.toFixed(2)}</p>
                     <div className="d-flex align-items-center">
                       <button className="btn btn-secondary" onClick={() => handleQuantityChange(item.id, 1)}>+</button>

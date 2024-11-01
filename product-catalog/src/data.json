@@ -1,58 +1,65 @@
 [
-    {
+  {
       "id": 1,
       "name": "Motorcycle Helmet",
       "price": 99.99,
-      "image": "/images/motorcycle_helmet.jpg"
-    },
-    {
+      "image": "/images/motorcycle_helmet.jpg",
+      "description": "A durable and comfortable motorcycle helmet designed to provide maximum protection and style for all riders."
+  },
+  {
       "id": 2,
       "name": "Leather Riding Jacket",
       "price": 149.99,
-      "image": "/images/leather_jacket.jpg"
-    },
-    {
+      "image": "/images/leather_jacket.jpg",
+      "description": "A stylish and protective leather jacket, ideal for motorcycle riding, with padded sections for added safety and comfort."
+  },
+  {
       "id": 3,
       "name": "Motorcycle Gloves",
       "price": 49.99,
-      "image": "/images/motorcycle_gloves.jpg"
-    },
-    {
+      "image": "/images/motorcycle_gloves.jpg",
+      "description": "High-quality gloves designed to provide a firm grip and protection, ensuring comfort and control during rides."
+  },
+  {
       "id": 4,
       "name": "Motorcycle Boots",
       "price": 129.99,
-      "image": "/images/motorcycle_boots.jpg"
-    },
-    {
+      "image": "/images/motorcycle_boots.jpg",
+      "description": "Rugged and stylish motorcycle boots offering superior grip and ankle support for safe and comfortable riding."
+  },
+  {
       "id": 5,
       "name": "Motorcycle Cover",
       "price": 34.99,
-      "image": "/images/motorcycle_cover.jpg"
-    },
-    {
+      "image": "/images/motorcycle_cover.jpg",
+      "description": "A weather-resistant cover to protect your motorcycle from rain, sun, dust, and scratches when parked."
+  },
+  {
       "id": 6,
       "name": "LED Headlight",
       "price": 69.99,
-      "image": "/images/led_headlight.jpg"
-    },
-    {
+      "image": "/images/led_headlight.jpg",
+      "description": "Bright and energy-efficient LED headlight, providing excellent visibility for safe nighttime riding."
+  },
+  {
       "id": 7,
       "name": "Motorcycle Lock",
       "price": 19.99,
-      "image": "/images/motorcycle_lock.jpg"
-    },
-    {
+      "image": "/images/motorcycle_lock.jpg",
+      "description": "A durable and secure lock to protect your motorcycle from theft, featuring a heavy-duty design for peace of mind."
+  },
+  {
       "id": 8,
       "name": "Handlebar Grips",
       "price": 24.99,
-      "image": "/images/handlebar_grips.jpg"
-    },
-    {
+      "image": "/images/handlebar_grips.jpg",
+      "description": "Comfortable and anti-slip handlebar grips, designed to reduce vibration and enhance control during rides."
+  },
+  {
       "id": 9,
       "name": "Tank Bag",
       "price": 79.99,
-      "image": "/images/tank_bag.jpg"
-    }
-    
-  ]
-  
+      "image": "/images/tank_bag.jpg",
+      "description": "Spacious and convenient tank bag with multiple compartments, perfect for storing essentials on long rides."
+  }
+]
