@@ -36,7 +36,10 @@ const App = () => {
   };
 
   const handleOrderConfirmation = (userInfo) => {
-    setOrderDetails({ items: cart, total: cart.reduce((sum, item) => sum + item.price * item.quantity, 0) });
+    setOrderDetails({ 
+      user: userInfo,
+      items: cart, 
+      total: cart.reduce((sum, item) => sum + item.price * item.quantity, 0) });
     setView('confirmation');
     setCart([]); // Clear cart after order
   };
@@ -168,18 +171,30 @@ const Checkout = ({ onConfirm, setView }) => {
 };
 
 const Confirmation = ({ orderDetails, resetCart }) => {
+  const { user, items, total } = orderDetails;
   return (
     <div>
       <h2>Order Confirmation</h2>
+
+      <h3>Thank You, {user.fullName}!</h3>
+      <p>A confirmation email has been sent to <strong>{user.email}</strong>.</p>
+
+      <h4>Shipping Address:</h4>
+      <p>
+        {user.address}<br />
+        {user.city}, {user.state} {user.zip}
+      </p>
+
       <h3>Items Purchased:</h3>
       <ul className="list-group mb-4">
-        {orderDetails.items.map(item => (
+        {items.map(item => (
           <li key={item.id} className="list-group-item">
             {item.name} x {item.quantity}
           </li>
         ))}
       </ul>
-      <h3>Total Amount: ${orderDetails.total.toFixed(2)}</h3>
+
+      <h3>Total Amount: ${total.toFixed(2)}</h3>
       <button className="btn btn-success" onClick={resetCart}>Back to Shop</button>
     </div>
   );
