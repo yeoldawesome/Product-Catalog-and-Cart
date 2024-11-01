@@ -74,9 +74,9 @@ const App = () => {
                     <p className="card-text">{item.description}</p>
                     <p className="card-text">${item.price.toFixed(2)}</p>
                     <div className="d-flex align-items-center">
-                      <button className="btn btn-secondary" onClick={() => handleQuantityChange(item.id, 1)}>+</button>
-                      <span className="mx-2">{quantities[item.id] || 0}</span>
                       <button className="btn btn-secondary" onClick={() => handleQuantityChange(item.id, -1)}>-</button>
+                      <span className="mx-2">{quantities[item.id] || 0}</span>
+                      <button className="btn btn-secondary" onClick={() => handleQuantityChange(item.id, 1)}>+</button>
                       <button className="btn btn-primary ms-2" onClick={() => addToCart(item.id, quantities[item.id])}>Add to Cart</button>
                     </div>
                   </div>
@@ -106,7 +106,7 @@ const App = () => {
       )}
 
       {view === 'checkout' && (
-        <Checkout onConfirm={handleOrderConfirmation} />
+        <Checkout onConfirm={handleOrderConfirmation} setView={setView} />
       )}
 
       {view === 'confirmation' && (
@@ -116,7 +116,7 @@ const App = () => {
   );
 };
 
-const Checkout = ({ onConfirm }) => {
+const Checkout = ({ onConfirm, setView }) => {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -134,7 +134,6 @@ const Checkout = ({ onConfirm }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add validation logic here
     onConfirm(formData);
   };
 
@@ -163,6 +162,7 @@ const Checkout = ({ onConfirm }) => {
         <input className="form-control" name="zip" placeholder="ZIP Code" onChange={handleChange} required />
       </div>
       <button type="submit" className="btn btn-primary">Order</button>
+      <button type="button" className="btn btn-secondary" onClick={() => setView('cart')}>Back</button>
     </form>
   );
 };
